@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-background: #E9ECF8;
+    --color-primario: #0a3871;
+    --color-secundario: #D8dfe8;
+    --color-terciario: white;
+    --color-cuartiario: #495057;
+
+
+    --fuente-inter: "Inter", sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin: 40px 4% 0% 5%;
+}
+
+body{
+    background-color: var(--color-background);
+    color: var(--color-primario);
+    box-sizing: border-box;  
+    
+}
+.encriptador{
+    display: flex;
+    align-content: flex-start;
+    
+        
+}
+.encriptador__contenido{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: var(--fuente-inter);  
+    margin: 80px 4% 0 10% ;    
+    width: 50%;    
+}
+.encriptador__contenido__label { /*para que las personas con discapacidad p
+                                    puedan aceder mejor al formulario*/
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* Clip fuera del área visible */
+    clip: rect(1px, 1px, 1px, 1px); /* Clip alternativo */
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+} 
+.encriptador__contenido__titulo textarea{
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+    background-color: var(--color-background);
+    border: none;
+    outline: none;
+    color: var(--color-primario); 
+    font-family: var(--fuente-inter);   
+}
+.encriptador__contenido__titulo textarea::placeholder{
+    color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-size: 2rem;
+}
+.encriptador__contenido__advertencia{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--color-cuartiario);
+    display: flex;
+    align-items: center;
+    padding: 0 0 16px 0;
+    display: flex;
+    gap: 8px;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 0 0 10% 0 ;
+
+}
+.botones__encriptar{
+    width: 50%;
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    background-color: var(--color-primario);
+    padding: 24px 24px;
+    font-size: 1rem;
+    color: var(--color-secundario);
+}
+.botones__encriptar:hover{ 
+    background-color: var(--color-terciario);
+    color: var(--color-primario);  
+}
+.botones__desencriptar{
+    width: 50%;
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    background-color: var(--color-secundario);
+    padding: 24px 24px;
+    
+    font-size: 1rem;
+    color: var(--color-primario);
+}
+.botones__desencriptar:hover{ 
+    background-color: var(--color-terciario);
+    color: var(--color-primario);  
+}
+.caja__de__resultados{
+    background-color: var(--color-terciario);
+    border-radius: 32px;
+    width: 400px;
+    margin: -40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;  probando si me deja el texto a la izquierda despues de encriptar o desencriptar*/
+    justify-content: space-between;
+   
+}
+
+.caja__de__resultados__imagen{
+    margin: 40% 8% 8%;   
+}
+.caja__de__resultados__imagen__espera{
+    margin: 40% 8% 8%;
+}
+
+.caja__de__resultados__titulo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-inter);
+    font-weight: bold;
+    text-align: center;
+    margin: 0% 8% 4% 8%;
+    color: var(--color-cuartiario);
+}
+.caja__de__resultados__obteniendo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-inter);
+    font-weight: bold;
+    text-align: center;
+    margin: 0% 8% 4% 8%;
+    color: var(--color-cuartiario);
+}
+.caja__de__resultados__parrafo {
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-cuartiario);
+    margin: 0% 8% 40% 8%;
+}
+
+.caja__de__resultados__Puntos{
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-cuartiario);
+    margin: 0% 8% 40% 8%;
+}
+.caja__de__resultados__parrafo__resultado{
+    font-size : 1.5rem;
+    margin : 8.04%;
+    text-Align : left;
+    
+    
+}
+
+.boton__copiar{
+    display: flex;
+    font-family: var(--fuente-inter);
+    border: 1px solid var(--color-primario);
+    border-radius: 24px;
+    background-color: var(--color-terciario);
+    box-sizing: border-box;
+
+    justify-content: center;
+    margin: 0% 8% 8%;
+    padding: 7.14%;
+    width: auto;
+    text-align: center;
+    color: var(--color-primario);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: var(--color-primario);
+    padding: 24px;
+    color: var(--color-terciario);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:768px){    /*Esto es el responsive para Tablets*/
+    header{
+        margin: 10% 5% 0;
+        
+    }
+    .encriptador {
+        flex-direction: column;
+        
+    }
+    .encriptador__contenido{
+        width: auto;
+        margin: 10% 5% 0;
+        
+    }
+    .botones{
+        padding: 0;
+    }
+    .botones__desencriptar{
+        background-color: var(--color-background);
+    }
+    .caja__de__resultados {
+        width: auto;
+        margin: 5% 5%;
+        align-items: center;
+    }
+    .caja__de__resultados__imagen {
+        display: none;
+    }
+    .caja__de__resultados__titulo{
+        margin: 4.6% 4.6% 2.31% 4.6%;       
+    }
+    .caja__de__resultados__parrafo{
+        margin: 0% 4.6% 4.6% 4.6%;
+    }
+    .caja__de__resultados__obteniendo{
+        margin: 4.6% 4.6% 2.31% 4.6%;
+    }
+    .caja__de__resultados__Puntos{
+        margin: 0% 4.6% 4.6% 4.6%;
+    }
+    .boton__copiar{
+        width: 90%; 
+    }
+}
+@media (max-width:375px){    /*Esto es el responsive para celulares*/
+    header{
+        margin: 10% 5% 0;
+        
+    }
+    .encriptador {
+        flex-direction: column;
+        
+    }
+    .encriptador__contenido{
+        width: auto;
+        margin: 10% 5% 0;
+    }
+    
+    .botones{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .botones__encriptar{
+        width: 100%;
+    }
+    .botones__desencriptar{
+        background-color: var(--color-background);
+        width: 100%;
+    }    
+    .caja__de__resultados {
+        width: auto;
+        margin: 5% 5%;
+        align-items: center;
+    }
+    .caja__de__resultados__imagen {
+        display: none;
+    }
+    .caja__de__resultados__titulo{
+        margin: 9.4% 9.4% 4.7% 9.4%;       
+    }
+    .caja__de__resultados__parrafo{
+        margin: 0% 9.4% 9.4% 9.4%;
+    }
+    .caja__de__resultados__obteniendo{
+        margin: 9.4% 9.4% 4.7% 9.4%;
+    }
+    .caja__de__resultados__Puntos{
+        margin: 0% 9.4% 9.4% 9.4%;
+    }
+    .boton__copiar{
+        width: 90%; 
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./assets/Logo.png" alt="Logo Alura Latam">
+    </header>
+
+    <main class="encriptador">
+        <section class="encriptador__contenido">
+            <div class="encriptador__contenido__titulo">
+                <label for="textoUsuario" class="encriptador__contenido__label">Ingrese el texto aquí</label>
+                <textarea id="textoUsuario" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>         
+            </div>
+            <h2 class="encriptador__contenido__advertencia">
+                <img src="./assets/Vector.png" alt="Signo de alerta">
+                Solo letras minúsculas y sin acentos
+            </h2>
+            <div class="botones">                             
+                <button class="botones__encriptar" id="botonEncriptar" type="button" style="cursor:pointer"> Encriptar </button>
+                <button class="botones__desencriptar" id="botonDesencriptar" type="button" style="cursor:pointer"> Desencriptar </button>
+            </div>
+        </section>
+        <section class="caja__de__resultados" id="cajaDeResultados"> <!--Preguntar si se puede dejar asi repitiendo los h1 y p -->
+            <img class="caja__de__resultados__imagen" id="imagenResultado" src="./assets/Muñeco.png" alt="Persona buscando con una lupa"> 
+            <h1 class="caja__de__resultados__titulo"id="tituloResultado" >Ningún mensaje fue encontrado</h1>
+            <p class="caja__de__resultados__parrafo" id="parrafoResultado" >Ingresa el texto que desees encriptar o desencriptar.</p>  
+            <img class="caja__de__resultados__imagen__espera" id="imagenEspera" style="display: none;" src="./assets/tortuga.png" alt="Persona buscando con una lupa"> 
+            <h1 class="caja__de__resultados__obteniendo"id="obteniendoInformacion" style="display: none;" >Obteniendo información</h1>
+            <p class="caja__de__resultados__Puntos" id="puntosSuspensivos" style="display: none;" >.......</p>  
+            <p class="caja__de__resultados__parrafo__resultado" id="parrafoencri" style="display: none;" ></p>           
+            <button class="boton__copiar" id="botonCopiar" type="button" style="display: none;"> Copiar </button>
+        </section>     
+    </main>
+    
+    <footer class="footer"> 
+        <p>Desarrollado por Carlos Lopez</p>
+    </footer>   
+
+    <script src="app.js"></script>  
+</body>
+</html>
